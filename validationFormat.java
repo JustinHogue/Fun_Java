@@ -1,3 +1,9 @@
+/**
+ * \file validationFormat.java
+ * \brief Implantation des méthodes de validation de format.
+ * \author Justin Hogue
+ */
+
 import java.util.*;
 
 /**
