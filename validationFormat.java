@@ -29,10 +29,11 @@ class validationFormat
             return false;
         }
         String numeroLocal = telephone.substring(telephone.length() - 9); /* Seulement le numéro local. */
+        ArrayList<Character> chiffresValides = new ArrayList<Character>(Arrays.asList('0','1','2','3','4','5','6','7','8','9'));
         for(int i = 0; i < numeroLocal.length(); i++)
         {
             char c = numeroLocal.charAt(i);
-            if (i != 0 && i != 4 && !Character.isDigit(c)) {
+            if (i != 0 && i != 4 && !(chiffresValides.contains(c))) { // On s'assure que les chiffres non-latins soient refusés.
                 /* Il faut que ce soit tous des chiffres sauf le trait d'union et l'espace. */
                 return false;
             }
@@ -93,8 +94,8 @@ class validationFormat
         System.out.println(validerTelephone(telephoneValide));
         System.out.println(validerTelephone(telephoneHackerMan));
 
-        String numeroRAMQ = "FRÉF 9708 0316";
-        String nom = "Frédéric";
+        String numeroRAMQ = "FREF 9708 0316";
+        String nom = "Frederic";
         String prenom = "Fortier";
         byte jourNaissance = 3;
         byte moisNaissance = 8;
