@@ -48,8 +48,8 @@ class validationFormat
             return false;
         }
 
-        if (!Character.isLetter(prenom.charAt(0)) || !Character.isLetter(nom.charAt(0)) ||
-        !Character.isLetter(nom.charAt(1)) || !Character.isLetter(nom.charAt(2))) { // Il nous faut absolument une lettre au début du prénom et trois au début du nom
+        // Il nous faut absolument une lettre au début du prénom et trois au début du nom
+        if (!Character.isLetter(prenom.charAt(0)) || !Character.isLetter(nom.charAt(0)) || !Character.isLetter(nom.charAt(1)) || !Character.isLetter(nom.charAt(2))) {
             return false;
         }
 
