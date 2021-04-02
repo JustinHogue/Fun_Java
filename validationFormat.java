@@ -91,13 +91,13 @@ class validationFormat
         String telephoneValide = "418 666-6666"; // Exemple de numéro valide.
         System.out.println(validerTelephone(telephoneValide));
 
-        String numeroRAMQ = "POIG 9758 0316";
-        String nom = "Poitras";
-        String prenom = "Ginette";
+        String numeroRAMQ = "FRÉF 9708 0316";
+        String nom = "Frédéric";
+        String prenom = "Fortier";
         byte jourNaissance = 3;
         byte moisNaissance = 8;
         int anneeNaissance = 1997;
-        char sexe = 'F';
+        char sexe = 'M';
         System.out.println(validerRAMQ(numeroRAMQ,nom,prenom,jourNaissance,moisNaissance,anneeNaissance,sexe));
     }
 }
