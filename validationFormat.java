@@ -89,7 +89,9 @@ class validationFormat
 
     public static void main(String[] args) {
         String telephoneValide = "418 666-6666"; // Exemple de numéro valide.
+        String telephoneHackerMan = "418 ۶۵۰-۲۴۵۶";
         System.out.println(validerTelephone(telephoneValide));
+        System.out.println(validerTelephone(telephoneHackerMan));
 
         String numeroRAMQ = "POIG 9758 0316";
         String nom = "Poitras";
